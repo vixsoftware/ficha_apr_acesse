@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>APR</title>
+</head>
+
+<body>
+  <center><h2>ANÁLISE PRELIMINAR DE RISCO</h2></center>
+  <br>
+  <form action="">
+    <center><div><label for="empresa">Empresa:</label>
+      <input type="text" id="empresa" name="empresa">
+    </center>
+      </div>
+    </div>
+    <br>
+    <div>
+      <center>
+        <label for="executante">Executante:</label>
+      <input type="text" name="executante" id="executante" required>
+
+      <label for="data">Data:</label>
+      <input type="date" name="data" id="data" required>
+
+      <label for="horainicial">Hora de Inicio:</label>
+      <input type="time" name="horainicial" id="horainicial" required>
+
+      <label for="horafinal">Hora Final</label>
+      <input type="time" name="horafinal" id="horafinal" required>
+      </center>
+    </div>
+    <br>
+    <hr>
+    <h4>Outras Permissões que utilizarei para trabalho em Altura</h4>
+    <div>
+      <label for="trabalho">Trabalho com eletricidade</label>
+      <input type="checkbox" name="trabalho" id="trabalho">
+      <br>
+      <label for="andaime">Andaime</label>
+      <input type="checkbox" name="andaime" id="andaime">
+      <br>
+      <label for="cadeira">Cadeira Suspensa</label>
+      <input type="checkbox" name="cadeira" id="cadeira">
+      <br>
+      <label for="telhado">Telhado</label>
+      <input type="checkbox" name="telhado" id="telhado">
+      <br>
+      <label for="escada">Escada</label>
+      <input type="checkbox" name="escada" id="escada">
+      <br>
+      <br>
+      <label for="localizacao">Localização do Serviço:</label>
+      <input type="text" name="text" id="text" required>
+      -
+      Requer Observador:
+      <label for="optsim">SIM</label>
+      <input type="radio" name="optsim " id="optsim">
+      <label for="optnao">NÃO</label>
+      <input type="radio" name="optnao" id="optnao">
+      <br>
+    </div>
+      <textarea name="descricao" id="descricao" cols="50" rows="5" placeholder="Descreva a atividade"></textarea>
+
+    <div>
+    Mão de Obra:
+    <label for="interna">Interna</label>
+    <input type="checkbox" name="interna" id="interna">
+
+    <label for="externa">Externa</label>
+    <input type="checkbox" name="externa" id="externa">
+
+    <label for="numberpessoas">Nº Pessoas</label>
+    <input type="number" name="numberpessoas" id="numberpessoas">
+    </div>
+
+  <hr>
+  <h4>Lista de Verificação - Pessoas e Equipamentos de Proteção Individual - EPIS</h4>
+<div>
+  <input type="checkbox" name="capacete" id="capacete">
+  <label for="capacete">Capacete com Jugular</label>
+
+  <input type="checkbox" name="calcado" id="calcado">
+  <label for="calcado">Calçado de Segurança</label>
+
+  <input type="checkbox" name="oculos" id="oculos">
+  <label for="oculos">Óculos de Segurança</label>
+
+  <input type="checkbox" name="protetorauditivo" id="protetorauditivo">
+  <label for="protetorauditivo">Protetor Auditivo</label>
+
+  <input type="checkbox" name="luva" id="luva">
+  <label for="luva">Luva de Segurança</label>
+
+    <br>
+  <input type="checkbox" name="corda" id="corda">
+  <label for="corda">Cabo Guia (corda)</label>
+
+  <input type="checkbox" name="aco" id="aco">
+  <label for="aco">Cabo Guia (aço)</label>
+
+  <input type="checkbox" name="travaquedas" id="travaquedas">
+  <label for="travaquedas">Trava Quedas 8mm e 12mm (aço) </label>
+
+  <input type="checkbox" name="travaquedas2" id="travaquedas2">
+  <label for="travaquedas2">Trava Quedas 8mm e 12mm (corda)</label>
+
+    <br>
+  <input type="checkbox" name="absorvedor" id="absorvedor">
+  <label for="absorvedor">Absorvedor de Energia</label>
+
+  <input type="checkbox" name="mosquetao" id="mosquetao">
+  <label for="mosquetao">Mosquetão Rosca</label>
+
+  <input type="checkbox" name="cinto" id="cinto">
+  <label for="cinto">Cinto de Segurança Paraquedista</label>
+    <br>
+  <input type="checkbox" name="talabarte" id="talabarte">
+  <label for="talabarte">Talabarte de Posicionamento</label>
+
+  <input type="checkbox" name="talabarteduplo" id="talabarteduplo">
+  <label for="talabarteduplo">Talabarte Duplo Y</label>
+
+  <input type="checkbox" name="conexaotalabarte" id="conexaotalabarte">
+  <label for="conexaotalabarte">Ponto de Conexão Talabarte</label>
+
+  <input type="checkbox" name="mosquetaorapido" name="mosquetaorapido">
+  <label for="mosquetaorapido">Mosquestão Encaixa Rápido</label>
+    <br>
+  <input type="checkbox" name="verificacao" name="verificacao">
+  <label for="verificacao">Os EPIs foram pessoalmente verificados e estão em boas condições para realização do trabalho</label>
+</div>
+<br>
+<hr>
+<br>
+<table border="1">
+    <tr>
+      <th>LISTA DE VERIFICAÇÃO - AMBIENTE DE TRABALHO PELO EXECUTANTE</th>
+      <th>SIM</th>
+      <th>NÃO</th>
+      <th>N/A</th>
+    </tr>
+    <tr>
+      <td>Existem instruções claras para execução do trabalho em altura?</td>
+      <td><input type="radio" name="instrucoes" value="sim"></td>
+      <td><input type="radio" name="instrucoes" value="nao"></td>
+      <td><input type="radio" name="instrucoes" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>O trabalhador é treinado e está autorizado a realizar o serviço?</td>
+      <td><input type="radio" name="autorizacao" value="sim"></td>
+      <td><input type="radio" name="autorizacao" value="nao"></td>
+      <td><input type="radio" name="autorizacao" value="n/a" ></td>
+    </tr>
+    <tr>
+      <td>A área ao redor do trabalho está bem isolada, identificada e seca, evitando passagem de pessoas e veículos?</td>
+      <td><input type="radio" name="areaaoredor" value="sim"></td>
+      <td><input type="radio" name="areaaoredor" value="nao"></td>
+      <td><input type="radio" name="areaaoredor" value="n/a"></td>
+    </tr>
+
+    <tr>
+      <td>A proximidade dos pontos de energia(elétrica, mecânica, pneumática, térmica, etc) foi analisada?</td>
+      <td><input type="radio" name="proximidadeanalisada" value="sim"></td>
+      <td><input type="radio" name="proximidadeanalisada" value="nao"></td>
+      <td><input type="radio" name="proximidadeanalisada" value="n/a"></td>
+    </tr>
+
+    <tr>
+      <td>A base de apoio para escadas, andaime, rampa, plataformas, etc, possui condições adequadas?</td>
+      <td><input type="radio" name="basedeapoio" value="sim"></td>
+      <td><input type="radio" name="basedeapoio" value="nao"></td>
+      <td><input type="radio" name="basedeapoio" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Os meios de acesso elevados possuem resistência suficiente para aguentar a carga de trabalho a qual estariam sujeitos?</td>
+      <td><input type="radio" name="meiosdeacessoresistencia" value="sim"></td>
+      <td><input type="radio" name="meiosdeacessoresistencia" value="nao"></td>
+      <td><input type="radio" name="meiosdeacessoresistencia" value="n/a"></td>
+    </tr>
+    <tr>
+    <td>Os meios de acesso elevados apresentam condições adequadas para uso?</td>
+      <td><input type="radio" name="meiodeacessocondicoes" value="sim"></td>
+      <td><input type="radio" name="meiodeacessocondicoes" value="nao"></td>
+      <td><input type="radio" name="meiodeacessocondicoes" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>O ponto onde o talabarte do cinto de segurança está preso é resistente e seguro?</td>
+      <td><input type="radio" name="pontotalabarte" value="sim"></td>
+      <td><input type="radio" name="pontotalabarte" value="nao"></td>
+      <td><input type="radio" name="pontotalabarte" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Existe risco de choque elétrico? (cabos expostos)</td>
+      <td><input type="radio" name="riscochoque" value="sim"></td>
+      <td><input type="radio" name="riscochoque" value="nao"></td>
+      <td><input type="radio" name="riscochoque" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Existem cabos de aço para colocação do talabarte de cinto de segurança?</td>
+      <td><input type="radio" name="cabodeaco" value="sim"></td>
+      <td><input type="radio" name="cabodeaco" value="nao"></td>
+      <td><input type="radio" name="cabodeaco" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Os cabos de aço utilizados possuem bitolas(espessura) adequadas para a atividade que será realizado?</td>
+      <td><input type="radio" name="cabodeacoadequado" value="sim"></td>
+      <td><input type="radio" name="cabodeacoadequado" value="nao"></td>
+      <td><input type="radio" name="cabodeacoadequado" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>As placas de advertência estão nítidas?</td>
+      <td><input type="radio" name="placaadvertencia" value="sim"></td>
+      <td><input type="radio" name="placaadvertencia" value="nao"></td>
+      <td><input type="radio" name="placaadvertencia" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Os cabos elétricos visíveis estão em boas condições, existem proteções para evitar contato?</td>
+      <td><input type="radio" name="condicaocaboeletrico" value="sim"></td>
+      <td><input type="radio" name="condicaocaboeletrico" value="nao"></td>
+      <td><input type="radio" name="condicaocaboeletrico" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Todos os colaboradores estão de acordo para a execução do serviço?</td>
+      <td><input type="radio" name="colaboradordeacordo" value="sim"></td>
+      <td><input type="radio" name="colaboradordeacordo" value="nao"></td>
+      <td><input type="radio" name="colaboradordeacordo" value="n/a"></td>
+    </tr>
+  </table>
+  <br>
+<hr>
+  <br>
+<table border="1">  
+  <tr>
+    <th>LISTA DE VERIFICAÇÃO - AMBIENTE DE TRABALHO PELO EXECUTANTE</th>
+    <th>SIM</th>
+    <th>NÃO</th>
+    <th>N/A</th>
+  </tr>
+    <tr>
+      <td>A equipe foi treinada para o trabalho, está consciente do risco e possuem ASO com aptidão para a atividade?</td>
+      <td><input type="radio" name="equipetreinada" value="sim"></td>
+      <td><input type="radio" name="equipetreinada" value="nao"></td>
+      <td><input type="radio" name="equipetreinada" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Existem números suficientes de EPI's para todos os executantes do trabalho?</td>
+      <td><input type="radio" name="episuficiente" value="sim"></td>
+      <td><input type="radio" name="episuficiente" value="nao"></td>
+      <td><input type="radio" name="episuficiente" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Os distanciamentos recomendados estão sendo seguidos?</td>
+      <td><input type="radio" name="distanciarecomendada" value="sim"></td>
+      <td><input type="radio" name="distanciarecomendada" value="nao"></td>
+      <td><input type="radio" name="distanciarecomendada" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Existe ponto de conexão para o cinto de segurança que está independente da estrutura?</td>
+      <td><input type="radio" name="pontodeconexaodocinto" value="sim"></td>
+      <td><input type="radio" name="pontodeconexaodocinto" value="nao"></td>
+      <td><input type="radio" name="pontodeconexaodocinto" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Existe cabo guia para colocação do talabarte?</td>
+      <td><input type="radio" name="caboguiadotalabarte" value="sim"></td>
+      <td><input type="radio" name="caboguiadotalabarte" value="nao"></td>
+      <td><input type="radio" name="caboguiadotalabarte" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Energias perigosas que estejam relacionadas com o serviço forma desligadas ou estão protegidas por anteparos?</td>
+      <td><input type="radio" name="energiasperigosoas" value="sim"></td>
+      <td><input type="radio" name="energiasperigosoas" value="nao"></td>
+      <td><input type="radio" name="energiasperigosoas" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>O local designado para o monitor do serviço é seguro e permite que o mesmo acompanhe o serviço por todo o tempo?</td>
+      <td><input type="radio" name="localservico" value="sim"></td>
+      <td><input type="radio" name="localservico" value="nao"></td>
+      <td><input type="radio" name="localservico" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Os equipamentos de resgate e emergência estão disponíveis?</td>
+      <td><input type="radio" name="equipamentosresgate" value="sim"></td>
+      <td><input type="radio" name="equipamentosresgate" value="nao"></td>
+      <td><input type="radio" name="equipamentosresgate" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>O local é classificado como Espaço Confinado?</td>
+      <td><input type="radio" name="espacoconfinado" value="sim"></td>
+      <td><input type="radio" name="espacoconfinado" value="nao"></td>
+      <td><input type="radio" name="espacoconfinado" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Haverá trabalho a quente no local?</td>
+      <td><input type="radio" name="trabalhoaquente" value="sim"></td>
+      <td><input type="radio" name="trabalhoaquente" value="nao"></td>
+      <td><input type="radio" name="trabalhoaquente" value="n/a"></td>
+    </tr>
+    <tr>
+      <td>Todos os campos preenchidos pelo executante foram checados e estão atendendo as normas de seguridade, conforme analisado?</td>
+      <td><input type="radio" name="campospreenchidos" value="sim"></td>
+      <td><input type="radio" name="campospreenchidos" value="nao"></td>
+      <td><input type="radio" name="campospreenchidos" value="n/a"></td>
+    </tr>
+  </table>
+  <br>
+    <label for="medidadecontrole">Outras Medidas de Controle:</label>
+    <input type="text" name="medidadecontrole" id="medidadecontrole" size="50">
+  </table>
+  <br>
+  <br>
+<label for="participantes">Servidores/Trabalhadores que participaram da tarefa</label>
+<br>
+<table border="1">
+  <thead>
+    <tr>
+      <th>TRABALHADOR</th>
+      <th>VISTO</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="text" name="ajudante1" id="ajudante1" placeholder="Insira o nome completo"></td>
+      <td><input type="text" name="vistoajudante1" id="vistoajudante1" placeholder="Assinatura do trabalhador"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="ajudante2" id="ajudante2" placeholder="Insira o nome completo"></td>
+      <td><input type="text" name="vistoajudante2" id="vistoajudante2" placeholder="Assinatura do trabalhador"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="ajudante3" id="ajudante3" placeholder="Insira o nome completo"></td>
+      <td><input type="text" name="vistoajudante3" id="vistoajudante3" placeholder="Assinatura do trabalhador"></td>
+    </tr>
+    <tr>
+      <td><input type="text" name="ajudante4" id="ajudante4" placeholder="Insira o nome completo"></td>
+      <td><input type="text" name="vistoajudante4" id="vistoajudante4" placeholder="Assinatura do trabalhador"></td>
+    </tr>
+
+  </tbody>
+</table>
+<hr>
+<br> 
+<label for="encarregadodoservico">Encarregado/Operador do Serviço</label>
+<input type="text" name="encarregadodoservico" id="encarregadodoservico" size="40" required>
+
+<label for="assinaturaencarregado">Assinatura do Encarregado/Operador</label>
+<input type="text" name="assinaturaencarregado" id="assinaturaencarregado" size="30" required>
+<br>
+<br>
+<label for="dataservico">Data:</label>
+<input type="date" name="dataservico" id="dataservico" required>
+- 
+<label for="horaservico">Hora:</label>
+<input type="time" name="horaservico" id="horaservico" required>
+<br>
+<br>
+</div>
+<label for="descricaoadicional">Observações</label>
+<br>
+<textarea name="descricaoadicional" id="descricaoadicional" cols="50" rows="5" placeholder="Descreva informações adicionais relevantes"></textarea>
+<div>
+
+  <h5>Confirme todas as informações inseridas finalize e encerre o formulário</h5>
+  <button type="button" onclick="confirm('Essas informações serão salvas e não poderão mais serem editadas')">Salvar</button>
+
+  </form>
+</html>
